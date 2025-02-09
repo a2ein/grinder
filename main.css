@@ -1,0 +1,75 @@
+/* 
+
+logo */
+
+header{
+
+.logo{
+
+align-items: center;
+
+text-align: center;
+}
+
+.hero-title{
+    text-align: center;
+}
+.second{
+    text-align: center;
+}
+}
+
+/* producsection */
+
+.product{
+
+
+border:1rem;
+padding: 4rem;
+
+    
+}
+
+
+  .image-container {
+  text-align: center;
+    position: relative;
+    padding: 10px; /* Add some padding to create space for the outline */
+  }
+  
+  .image-container img {
+    display: block;
+    width: 300px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Color-changing outline effect */
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px; /* Match the image's border radius */
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+    background-size: 400% 400%;
+    animation: color-change 5s ease infinite;
+    z-index: 0;
+    filter: blur(10px); /* Add a blur effect to the outline */
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

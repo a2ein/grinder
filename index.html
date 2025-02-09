@@ -3,11 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout Page</title>
+  <title>প্রিমিয়াম কোয়ালিটির গ্রাইন্ডার</title>
   <link rel="stylesheet" href="form/styles.css">
+  <link rel="stylesheet" href="main.css"> <link rel="stylesheet" href="slider.css">
 </head>
 <body>
-  <div class="checkout-container">
+<!--Header section-->
+<header class="hero">
+<div class="logo"><img src="https://ladiesbucket.com/wp-content/uploads/2025/02/334305806_717024719971466_2280126043567462505_n__1_-removebg-preview.png" alt="logo" width="180px" height="180px"></div>
+
+
+<div class="hero-title">প্রিমিয়াম কোয়ালিটির গ্রাইন্ডার</div>
+<hr>
+<div class="second">এখন নিমিষেই গুড়া করা যাবে যেকোন শুকনা মশলা!</div>
+
+
+<div class="order">
+<button> <a href="#order">অর্ডার করুন </a></button>
+
+
+</div>
+</header>
+
+<!--product section-->
+<section id="product" class="product">
+
+
+  <div class="slider-wrapper">
+    <div class="slider-container">
+      <div class="slider">
+        <img src="https://ladiesbucket.com/wp-content/uploads/2025/02/LBBDRE-1004.1-2-1-1.jpg" alt="Image 1" class="slide">
+        <img src="https://ladiesbucket.com/wp-content/uploads/2025/02/LBBDRE-1004.1-2-1-1.jpg" alt="Image 2" class="slide">
+        <img src="https://ladiesbucket.com/wp-content/uploads/2025/02/LBBDRE-1004.1-2-1-1.jpg" alt="Image 3" class="slide">
+        <img src="https://ladiesbucket.com/wp-content/uploads/2025/02/LBBDRE-1004.1-2-1-1.jpg" alt="Image 4" class="slide">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+  <div id="order" class="checkout-container">
     <h1>Checkout</h1>
     <form id="checkout-form" name="checkout-form" netlify>
       <div class="form-group">
@@ -55,5 +95,6 @@
 
   </div>
   <script src="form/script.js"></script>
+  <script src="slider.js"></script>
 </body>
 </html>

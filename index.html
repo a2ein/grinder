@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="form/styles.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+    <form id="checkout-form" name="checkout-form" netlify>
+      <div class="form-group">
+        <label for="name">আপনার নাম</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">মোবাইল নম্বর</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+88XXXXXXXXXXX" pattern="\+88\d{11}" required>
+      </div>
+      <div class="form-group">
+        <label for="address">ঠিকানা</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+          <option value="cashOnDelivery">CASH ON DELIVERY</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>ডেলিভারি চার্জ</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="deliveryAddress" id="inSideDhaka" value="inSideDhaka"> ঢাকার ভিতরে
+          </label>
+          <label>
+            <input type="checkbox" name="deliveryAddress" id="outSideDhaka" value="outSideDhaka"> ঢাকার বাইরে
+          </label>
+        </div>
+      </div>
+      
+    <!-- Cash Memo Section -->
+    <div id="cash-memo" class="cash-memo" style="display: none;">
+      <h2>Cash Memo</h2>
+      <p><strong>নাম:</strong> <span id="memo-name"></span></p>
+      <p><strong>মোবাইল নম্বর:</strong> <span id="memo-phone"></span></p>
+      <p><strong>ঠিকানা:</strong> <span id="memo-address"></span></p>
+      <p><strong>Payment Method:</strong> <span id="memo-payment"></span></p>
+      <p><strong>ডেলিভারি ঠিকানা:</strong> <span id="memo-delivery"></span></p>
+      <p><strong>ডেলিভারি চার্জ:</strong> <span id="memo-charge"></span></p>
+    </div>
+      <button type="submit">Place Order</button>
+    </form>
+
+  </div>
+  <script src="form/script.js"></script>
+</body>
+</html>

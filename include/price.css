@@ -1,101 +1,116 @@
-/* General Styles */
-prce {
-  display: flex; justify-content: center;
-    text-align: center;
-    align-items: center;
 
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+
+.video-container {
+  position: relative;
+  max-width: 1000px;
+  width: 90%; /* Responsive width */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0) 1;
+  animation: gradient-border 5s ease infinite;
+}
+
+@keyframes gradient-border {
+  0% {
+      border-image-source: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+  }
+  25% {
+      border-image-source: linear-gradient(45deg, #fbc2eb, #a6c1ee, #84fab0, #ff9a9e, #fad0c4);
+  }
+  50% {
+      border-image-source: linear-gradient(45deg, #84fab0, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  }
+  75% {
+      border-image-source: linear-gradient(45deg, #a6c1ee, #84fab0, #ff9a9e, #fad0c4, #fbc2eb);
+  }
+  100% {
+      border-image-source: linear-gradient(45deg, #fad0c4, #fbc2eb, #a6c1ee, #84fab0, #ff9a9e);
+  }
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%; /* Responsive size */
+  max-width: 80px; /* Maximum size */
+  height: auto;
+  aspect-ratio: 1 / 1; /* Keep it square */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+  font-size: 5vw; /* Responsive font size */
+  color: #ff6f61;
+  margin-left: 5px; /* Adjust the play icon position */
+  max-font-size: 40px; /* Maximum font size */
+}
+
+/* Hide the play button when the video is playing */
+.video-container.playing .play-button {
+  display: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .play-button {
+      width: 20%; /* Larger button on smaller screens */
+  }
+
+  .play-icon {
+      font-size: 8vw; /* Larger icon on smaller screens */
+  }
+}
+
+
+
+  /* Data Section */
+  .datalayer {
+    padding: 50px 20px;
+    background: #f9f9f9;
   }
   
-  .price-box {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    border-radius: 15px;
+  .why-choose-us {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    color: white;
-    width: 80%;
-    max-width: 400px; /* Maximum width for larger screens */
-    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
-  .price-content {
+  .why-choose-us h2 {
+    font-size: 2rem;
+    color: #ff6f61;
     margin-bottom: 20px;
   }
   
-  .discounted-price {
-    font-size: 2.5em; /* Responsive font size */
-    font-weight: bold;
-    display: block;
-    line-height: 1;
+  .benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
   }
   
-  .regular-price {
-    font-size: 1.2em; /* Responsive font size */
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: line-through;
-  }
-  
-  .order-button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-
-    font-size: 1em; /* Responsive font size */
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
-    width: 100%; /* Full width on smaller screens */
-    max-width: 200px; /* Maximum width for larger screens */
-  }
-  
-  .order-button:hover {
-    background-color: #ff3b2f;
-    transform: translateY(-3px);
-  }
-  
-  .order-button:active {
-    transform: translateY(0);
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .price-box {
-      padding: 15px;
-    }
-  
-    .discounted-price {
-      font-size: 2em; /* Smaller font size for tablets */
-    }
-  
-    .regular-price {
-      font-size: 1em; /* Smaller font size for tablets */
-    }
-  
-    .order-button {
-      font-size: 0.9em; /* Smaller font size for tablets */
-      padding: 12px 25px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .price-box {
-      padding: 10px;
-    }
-  
-    .discounted-price {
-      font-size: 1.8em; /* Smaller font size for mobile */
-    }
-  
-    .regular-price {
-      font-size: 0.9em; /* Smaller font size for mobile */
-    }
-  
-    .order-button {
-      font-size: 0.8em; /* Smaller font size for mobile */
-      padding: 10px 20px;
-    }
+  .benefits-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
   }

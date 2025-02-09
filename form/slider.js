@@ -16,3 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Change slide every 2 seconds
     setInterval(nextSlide, 2000);
   });
+
+
+
+  const videoContainer = document.querySelector('.video-container');
+const playButton = document.getElementById('playButton');
+const video = document.getElementById('video');
+
+playButton.addEventListener('click', () => {
+    videoContainer.classList.add('playing');
+    video.src += "?autoplay=1"; // Autoplay the video
+});
+
+video.addEventListener('play', () => {
+    videoContainer.classList.add('playing');
+});
+
+video.addEventListener('pause', () => {
+    videoContainer.classList.remove('playing');
+});

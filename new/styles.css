@@ -45,8 +45,8 @@ a {
 }
 
 .order-button {
-  background: #07bb58;
-  color: rgb(255, 255, 255);
+  background: #ff6f61;
+  color: white;
   border: none;
   padding: 15px 30px;
   font-size: 1rem;
@@ -77,11 +77,30 @@ a {
   border-image: linear-gradient(135deg, #ff9a9e, #fad0c4) 1;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+  background-size: 200% 200%;
+  animation: gradient-change 5s ease infinite;
+}
+
+@keyframes gradient-change {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .slider-container {
   display: flex;
   transition: transform 0.5s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slide {
@@ -117,35 +136,53 @@ a {
   margin-top: 20px;
 }
 
-/* Data Section */
-.datalayer {
-  padding: 50px 20px;
-  background: #f9f9f9;
+.flexyboxcol {
+  display: flex;
+  flex-direction: column;
 }
 
+/* Why Choose Us Section */
 .why-choose-us {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .why-choose-us h2 {
   font-size: 2rem;
-  color: #ff6f61;
+  color: #2575fc;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .benefits-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .benefits-list li {
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  color: #555;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.benefits-list li::before {
+  content: "✔";
+  color: #28a745;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Checkout Section */
@@ -221,31 +258,27 @@ button[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem;
+      font-size: 2rem;
   }
 
   .second {
-    font-size: 1rem;
+      font-size: 1rem;
   }
 
   .flexybox {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
 
   .slider-wrapper {
-    max-width: 100%;
+      max-width: 100%;
   }
 
   .why-choose-us h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   .benefits-list li {
-    font-size: 1rem;
+      font-size: 1rem;
   }
-}
-
-li{
-  list-style: none
 }

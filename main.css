@@ -3,7 +3,7 @@
 logo */
 
 header{
-
+text-align: center;
 .logo{
 
 align-items: center;
@@ -73,3 +73,24 @@ padding: 4rem;
       background-position: 0% 50%;
     }
   }
+
+  .order-button{
+text-align: center;
+
+    a{
+      text-decoration: none;
+    }
+  }
+
+  
+  .superproduct{
+padding: 10rem;
+    display: flex; flex-direction: column;
+  }
+
+  .flexybox{
+row-gap: 3px;
+
+    display: flex; flex-direction: row; justify-content:space-around;
+  }
+

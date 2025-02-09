@@ -1,0 +1,106 @@
+section {
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+.slider-wrapper {
+    padding: 10px; /* Space for the gradient outline */
+    border-radius: 20px; /* Rounded corners for the outline */
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+    background-size: ;
+    animation: gradient-change 5s ease infinite;
+  }
+  
+  @keyframes gradient-change {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .slider-container { text-align: center;
+  max-width: 600px; /* Adjust the width of the slider */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slider {
+
+    
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+
+
+
+
+  /* General Styles */
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2575fc;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Benefits List */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.benefits-list li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.benefits-list li::before {
+  content: "✔";
+  color: #28a745; /* Green checkmark color */
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.flexyboxcol{
+
+  display: flex; flex-direction: column;
+}

@@ -1,0 +1,101 @@
+/* General Styles */
+prce {
+  display: flex; justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .price-box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 80%;
+    max-width: 400px; /* Maximum width for larger screens */
+    margin: 10px;
+  }
+  
+  .price-content {
+    margin-bottom: 20px;
+  }
+  
+  .discounted-price {
+    font-size: 2.5em; /* Responsive font size */
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+  }
+  
+  .regular-price {
+    font-size: 1.2em; /* Responsive font size */
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: line-through;
+  }
+  
+  .order-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+
+    font-size: 1em; /* Responsive font size */
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+    width: 100%; /* Full width on smaller screens */
+    max-width: 200px; /* Maximum width for larger screens */
+  }
+  
+  .order-button:hover {
+    background-color: #ff3b2f;
+    transform: translateY(-3px);
+  }
+  
+  .order-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .price-box {
+      padding: 15px;
+    }
+  
+    .discounted-price {
+      font-size: 2em; /* Smaller font size for tablets */
+    }
+  
+    .regular-price {
+      font-size: 1em; /* Smaller font size for tablets */
+    }
+  
+    .order-button {
+      font-size: 0.9em; /* Smaller font size for tablets */
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .price-box {
+      padding: 10px;
+    }
+  
+    .discounted-price {
+      font-size: 1.8em; /* Smaller font size for mobile */
+    }
+  
+    .regular-price {
+      font-size: 0.9em; /* Smaller font size for mobile */
+    }
+  
+    .order-button {
+      font-size: 0.8em; /* Smaller font size for mobile */
+      padding: 10px 20px;
+    }
+  }

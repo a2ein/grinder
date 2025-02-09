@@ -13,6 +13,10 @@ a {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 /* Header Section */
 .hero {
   text-align: center;
@@ -46,7 +50,7 @@ a {
 
 .order-button {
   background: #07bb58;
-  color: rgb(255, 255, 255);
+  color: white;
   border: none;
   padding: 15px 30px;
   font-size: 1rem;
@@ -101,7 +105,7 @@ a {
 
 .discounted-price {
   font-size: 1.5rem;
-  color: #ff6f61;
+  color: #02db64;
   font-weight: bold;
 }
 
@@ -117,36 +121,6 @@ a {
   margin-top: 20px;
 }
 
-/* Data Section */
-.datalayer {
-  padding: 50px 20px;
-  background: #f9f9f9;
-}
-
-.why-choose-us {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.why-choose-us h2 {
-  font-size: 2rem;
-  color: #ff6f61;
-  margin-bottom: 20px;
-}
-
-.benefits-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.benefits-list li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
 
 /* Checkout Section */
 .checkout-container {
@@ -160,7 +134,7 @@ a {
 
 .checkout-container h1 {
   text-align: center;
-  color: #ff6f61;
+  color: #08eb1b;
   margin-bottom: 20px;
 }
 
@@ -205,7 +179,7 @@ a {
 button[type="submit"] {
   width: 100%;
   padding: 15px;
-  background: #ff6f61;
+  background: #029c30;
   color: white;
   border: none;
   border-radius: 5px;
@@ -215,7 +189,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: #ff3b2f;
+  background: #2fff8d;
 }
 
 /* Responsive Design */
@@ -244,8 +218,4 @@ button[type="submit"]:hover {
   .benefits-list li {
     font-size: 1rem;
   }
-}
-
-li{
-  list-style: none
 }

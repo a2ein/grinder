@@ -55,13 +55,13 @@
 }
 
 .play-button:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(12, 224, 47);
   transform: translate(-50%, -50%) scale(1.1);
 }
 
 .play-icon {
   font-size: 5vw; /* Responsive font size */
-  color: #ff6f61;
+  color: #f00626;
   margin-left: 5px; /* Adjust the play icon position */
   max-font-size: 40px; /* Maximum font size */
 }
@@ -83,34 +83,3 @@
 }
 
 
-
-  /* Data Section */
-  .datalayer {
-    padding: 50px 20px;
-    background: #f9f9f9;
-  }
-  
-  .why-choose-us {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .why-choose-us h2 {
-    font-size: 2rem;
-    color: #ff6f61;
-    margin-bottom: 20px;
-  }
-  
-  .benefits-list {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .benefits-list li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }

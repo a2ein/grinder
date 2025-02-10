@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('memo-delivery').textContent = delivery;
     document.getElementById('memo-charge').textContent = deliveryCharge + ' BDT';
     document.getElementById('memo-bill').textContent = totalBill + ' BDT';
-
-    // Show cash memo
-    cashMemo.style.display = 'block';
+// Auto-fill the input field
+  document.getElementById('totalBill').value = totalBill;
+    
 
     // Submit form to Netlify
     fetch('/', {
@@ -79,17 +79,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-fetch('/.netlify/functions/sendBill', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ totalBill }),
-})
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.message);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });

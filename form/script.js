@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const address = document.getElementById('address').value;
     const payment = document.getElementById('payment').value;
     const delivery = selectedCheckbox.value === 'inSideDhaka' ? 'Inside Dhaka' : 'Outside Dhaka';
-    const offerPrice = 500; // Replace with actual offer price
+    const offerPrice = 1250; // Replace with actual offer price
 
     // Calculate total bill
     const totalBill = offerPrice + deliveryCharge;

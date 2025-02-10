@@ -10,7 +10,7 @@ section {
 .slider-wrapper {
     padding: 10px; /* Space for the gradient outline */
     border-radius: 20px; /* Rounded corners for the outline */
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+    background: linear-gradient(45deg, #047417, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
     background-size: 100%;
     animation: gradient-change 5s ease infinite;
   }

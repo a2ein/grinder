@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // Change slide every 2 seconds
-    setInterval(nextSlide, 2000);
+    setInterval(nextSlide, 9900);
   });
 
   const videoContainer = document.querySelector('.video-container');

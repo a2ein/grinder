@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Calculate total bill
     const totalBill = offerPrice + deliveryCharge;
-// Auto-fill the input field
-  document.getElementById('totalBill').value = totalBill;
+    document.getElementById('totalBill').value = totalBill;
+
     // Update cash memo content
     document.getElementById('memo-name').textContent = name;
     document.getElementById('memo-phone').textContent = phone;
@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('memo-charge').textContent = deliveryCharge + ' BDT';
     document.getElementById('memo-bill').textContent = totalBill + ' BDT';
 
-    
+    // Show the cash memo
+    cashMemo.style.display = 'block';
 
     // Submit form to Netlify
     fetch('/', {
@@ -78,4 +79,3 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch((error) => alert('Error submitting order. Please try again.'));
   });
 });
-

@@ -1,159 +1,235 @@
 <!DOCTYPE html>
-<html lang="bn">        
+<html lang="bn">
+
 <head>
-
-
-  <link rel="icon" type="image" href="image/logo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>প্রিমিয়াম কোয়ালিটির গ্রাইন্ডার</title>
-  
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NS2LVZ3J');</script>
-<!-- End Google Tag Manager -->
-  
-  
+
+  <link rel="icon" type="image/png" href="image/logo.png">
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NS2LVZ3J');
+  </script>
+
   <link rel="stylesheet" href="form/styles.css">
-  <link rel="stylesheet" href="main.css"> <link rel="stylesheet" href="include/slider.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="include/slider.css">
   <link rel="stylesheet" href="include/price.css">
+  <link rel="stylesheet" href="styles.css"> 
+  
+  <style>
+    /* styles.css */
+/* Basic Styling */
+.hero {
+  text-align: center;
+  padding: 20px;
+}
 
+.hero-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
 
-<style> 
-    .product img {
-      max-width: 100%; /* Make image responsive */
-      height: auto;
-      display: block; /* Prevent image from creating extra space */
-      margin: 0 auto; /* Center the image */
-    }
-    .youtube iframe {
-      width: 100%; /* Make video responsive */
-      height: auto;
-      max-width: 1000px;
-      margin: 0 auto; /* Center the video */
-      display: block;
-    }
-    @media (min-width: 768px) { /* Adjust breakpoint as needed */
-      .flexybox {
-        flex-direction: row; /* Arrange elements horizontally on larger screens */
-        justify-content: center; /* Space items evenly */
-      }
+.second {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.order-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.order-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+.flexybox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .flexybox {
+    flex-direction: row;
+    justify-content: center;
   }
-</style>
+}
 
-</head>
+.why-choose-us {
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.checkout-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cash-memo {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cash-memo p {
+  margin-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff2; /* Or any color you prefer */
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: green;
+  background-color: lightblue; /* More readable background color */
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+footer small {
+  margin-top: 5px;
+}
+
+/* Styles from your existing CSS files (if any) should also be included here */
+/* For example, if you have styles in main.css, include them like this: */
+/* @import url("main.css"); */
+
+/* Or copy the content of main.css here */
+
+  </style>
+  
+  </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS2LVZ3J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
-<!--Header section-->
-<header class="hero">
-<div class="logo"><img src="img/logo.png" alt="logo" width="180px" height="180px"></div>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS2LVZ3J" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
 
-
-<div class="hero-title">প্রিমিয়াম কোয়ালিটির গ্রাইন্ডার</div>
-<hr>
-<div class="second">এখন নিমিষেই গুড়া করা যাবে যেকোন শুকনা মশলা!</div>
-
-
-<div class="order">
-<button class="order-button"> <a href="#order">অর্ডার করুন </a></button>
-
-
-</div>
-</header>
-<br><br>
-<!--product section-->
-<section align="center" style="outline: dotted; outline-width:2px; outline-color:green;"id="superproduct" class="superproduct">
-<div style="padding:2px;max-width:100%" class="product"> 
-   
-      <img  min-width="250px" min-height="120px" max-width="900px" min-height="800px"  src="img/banner1.jpg" alt="Image 1" class="slide">
-      
-    
- 
-
-    
-</div> 
-</div>
-<!--ordernow-->
-   <div class="order"> <div class="price-box">
-    <div class="price-content">
-      <span class="discounted-price">ডিসকাউন্ট মূল্য: ১২৫০ টাকা</span>
-      <span class="regular-price"><del>রেগুলার মূল্য: ১৩৯০ টাকা </del> </span>
+  <header class="hero">
+    <div class="logo"><img src="img/logo.png" alt="logo" width="180" height="180"></div>
+    <div class="hero-title">প্রিমিয়াম কোয়ালিটির গ্রাইন্ডার</div>
+    <hr>
+    <div class="second">এখন নিমিষেই গুড়া করা যাবে যেকোন শুকনা মশলা!</div>
+    <div class="order">
+      <button class="order-button"><a href="#order">অর্ডার করুন</a></button>
     </div>
-<br>
-    <div class="flexybox"><button class="order-button">    <a href="#order" id="none">অর্ডার করুন</a>      </button>
+  </header>
 
-      <button class="order-button"> <a href="#productDescription" class="none">পণ্যের বিবরণ</a></button></div>
-    
-  </div>
-  </div>
+  <section id="superproduct" class="superproduct">
+    <div class="product">
+      <img src="img/banner1.jpg" alt="গ্রাইন্ডার" class="slide">
+    </div>
 
-<!---->
-
-</div>
-
-  
-
- </div>
- <!--test-->
-
- 
-  
-
-      
-  
-
-
- <!--video-->
- <div style="padding:2%; margin:1%;" class="youtube">   <iframe style="display:flex; overflow: hidden;outline:solid; outline-color:green;
-  outline-width:2px;" id="video"  max-width="1000" 
-  max-height="480"src="https://www.youtube.com/embed/SRcRwLHnjnY" title="এখন নিমিষেই গুড়া
-  করা যাবে যেকোন শুকনা মশলা ও খুব সহজে পেস্ট হবে যেকোনো ভেজা জাতীয় মশলা।" frameborder="2"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen></iframe>
-  
+    <div class="order">
+      <div class="price-box">
+        <div class="price-content">
+          <span class="discounted-price">ডিসকাউন্ট মূল্য: ১২৫০ টাকা</span>
+          <span class="regular-price"><del>রেগুলার মূল্য: ১৩৯০ টাকা </del> </span>
+        </div><br>
+        <div class="flexybox">
+          <button class="order-button"><a href="#order">অর্ডার করুন</a></button>
+          <button class="order-button"><a href="#productDescription">পণ্যের বিবরণ</a></button>
+        </div>
       </div>
+    </div>
 
+    <div class="youtube">
+      <iframe src="https://www.youtube.com/embed/SRcRwLHnjnY"
+        title="এখন নিমিষেই গুড়া করা যাবে যেকোন শুকনা মশলা ও খুব সহজে পেস্ট হবে যেকোনো ভেজা জাতীয় মশলা।" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </section>
 
- 
-<br><br><br>
-</section>
-
-<!--data-->
-<!-- 
-<section class="datalayer">
-
-<div class="flexybox"> <div id="productDescription" class="why-choose-us">
-    <h2>পণ্যের বিবরণ:</h2>
-    <ul class="benefits-list">
-      <li>এখন নিমিষেই গুড়া করা যাবে যেকোন শুকনা মশলা ও খুব সহজে পেস্ট হবে যেকোনো ভেজা জাতীয় মশলা।</li>
-      <li>কালোজিরা, শুকনা মরিচ, জিরা, মেথি, সরিষা, দারুচিনি সহ যেকোন ধরনের চাল,ডাল, বাদাম ইত্যাদি গুড়া বা পাউডার করা যাবে মাত্র কয়েক সেকেন্ডে।</li>
-      <li>পেয়াজ,রসুন,আদা সহ সকল প্রকার মসলা ব্লেন্ডার করা যাবে।</li>
-      <li>এছাড়াও যেকোনো ধরনের ফলের জুস তৈরী করতে পারবেন খুব সহজে।</li>
-    </ul>
-  </div>
-<br>
-  <div class="why-choose-us">
-    <h2>আমাদের থেকে কেনো নিবেন?</h2>
-    <ul class="benefits-list">
-      <li>আমাদের কাছে পেয়ে যাচ্ছেন অতি সুলভ মূল্যে প্রিমিয়াম কোয়ালিটির সকল ধরণের পণ্য।</li>
-      <li>বাংলাদেশের যেকোনো স্থানে কম খরচে নির্দিষ্ট সময়ের মধ্যে হোম ডেলিভারী।</li>
-      <li>যেকোনো সমস্যায় পণ্য রিটার্নের সুবিধা।</li>
-      <li>২৪/৭ কাস্টমার সার্ভিস সুবিধা।</li>
-    </ul>
-  </div>
- 
-</section> -->
-
-
-  <!-- Data Section -->
   <section class="datalayer">
     <div class="flexybox">
       <div id="productDescription" class="why-choose-us">
@@ -165,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>এছাড়াও যেকোনো ধরনের ফলের জুস তৈরী করতে পারবেন খুব সহজে।</li>
         </ul>
       </div>
-      <br>
+
       <div class="why-choose-us">
         <h2>আমাদের থেকে কেনো নিবেন?</h2>
         <ul class="benefits-list">
@@ -176,11 +252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
     </div>
-  </section> <br><br>
-
-
-
-
+  </section>
 
   <div id="order" class="checkout-container">
     <h1>Checkout</h1>
@@ -214,23 +286,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </label>
         </div>
       </div>
-      
-    <!-- Cash Memo Section -->
-    <div id="cash-memo" class="cash-memo" style="display: none;">
-      <h2>Invoice</h2> 
-      <p><strong>নাম:</strong> <span id="memo-name"></span></p>
-      <p><strong>মোবাইল নম্বর:</strong> <span id="memo-phone"></span></p>
-      <p><strong>ঠিকানা:</strong> <span id="memo-address"></span></p>
-      <p><strong>Payment Method:</strong> <span id="memo-payment"></span></p>
-      <p><strong>ডেলিভারি ঠিকানা:</strong> <span id="memo-delivery"></span></p>
-      <p><strong>ডেলিভারি চার্জ:</strong> <span id="memo-charge"></span></p>
-    </div>
+
+      <div id="cash-memo" class="cash-memo" style="display: none;">
+        <h2>Invoice</h2>
+        <p><strong>নাম:</strong> <span id="memo-name"></span></p>
+        <p><strong>মোবাইল নম্বর:</strong> <span id="memo-phone"></span></p>
+        <p><strong>ঠিকানা:</strong> <span id="memo-address"></span></p>
+        <p><strong>Payment Method:</strong> <span id="memo-payment"></span></p>
+        <p><strong>ডেলিভারি ঠিকানা:</strong> <span id="memo-delivery"></span></p>
+        <p><strong>ডেলিভারি চার্জ:</strong> <span id="memo-charge"></span></p>
+      </div>
       <button type="submit">Place Order</button>
     </form>
 
   </div>
-
-
 
 
   <script src="form/script.js"></script>
@@ -238,18 +307,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<hr>
-  <footer style="display:flex;overflow:hidden; flex-direction:column; justify-content:center;" bg-color="#ff2" align="center" style="padding:10px"> <p align="center"> Our Contact Information</p>
-<a style="text-decoration:none; color:green; bg-color:blue; padding:4px;" href="CALLTO:+8801576847832"> contact number- 01576847832</a>
-
-    <br> <a style="text-decoration:none; color:green; bg-color:blue; padding:4px;" href="EMAILTO:ladiesbucketbd@gmail.com">ladiesbucketbd@gmail.com</a>
-<br>
-    
-    <br>
-All rights reserved @LadiesBucket &copy 2025 <br>
-  <br>  <small>last updated 15:00</small>
+  <footer>
+    <p>Our Contact Information</p>
+    <a href="tel:+8801576847832">Contact Number: 01576847832</a><br>
+    <a href="mailto:ladiesbucketbd@gmail.com">ladiesbucketbd@gmail.com</a><br>
+    All rights reserved @LadiesBucket &copy; 2025<br>
+    <small>Last updated 15:00</small>
   </footer>
 
-
 </body>
-</html>
+
+  </html>
+  

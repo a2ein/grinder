@@ -363,8 +363,7 @@ footer a {
             <input type="checkbox" name="deliveryAddress" id="outSideDhaka" value="outSideDhaka"> ঢাকার বাইরে-১৩০ টাকা
           </label> 
         </div>
-      <label style="display:none:" for="totalBill"> <input style="display:none" type="text" id="totalBill" class="totalBill">
-      </label>
+      
 
       <div id="cash-memo" class="cash-memo" style="display: none;">
         <h2>Invoice</h2>
@@ -374,7 +373,7 @@ footer a {
         <p><strong>Payment Method:</strong> <span id="memo-payment"></span></p>
         <p><strong>ডেলিভারি ঠিকানা:</strong> <span id="memo-delivery"></span></p>
         <p><strong>ডেলিভারি চার্জ:</strong> <span id="memo-charge"></span></p>
-        <p><strong>Total Bill:</strong> <span id="memo-bill"></span></p>
+        <p><strong>Total Bill:</strong> <input style="outline:none;border:none;" name="TotalBill" type="text" id="memo-bill"></p>
       </div>
       <button class="order-button" type="submit">Place Order</button>
     </form>

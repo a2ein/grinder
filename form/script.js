@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Calculate total bill
     const totalBill = offerPrice + deliveryCharge;
-
+// Auto-fill the input field
+  document.getElementById('totalBill').value = totalBill;
     // Update cash memo content
     document.getElementById('memo-name').textContent = name;
     document.getElementById('memo-phone').textContent = phone;
@@ -64,8 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('memo-delivery').textContent = delivery;
     document.getElementById('memo-charge').textContent = deliveryCharge + ' BDT';
     document.getElementById('memo-bill').textContent = totalBill + ' BDT';
-// Auto-fill the input field
-  document.getElementById('totalBill').value = totalBill;
+
     
 
     // Submit form to Netlify

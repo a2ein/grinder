@@ -78,3 +78,18 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch((error) => alert('Error submitting order. Please try again.'));
   });
 });
+
+fetch('/.netlify/functions/sendBill', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ totalBill }),
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.message);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
